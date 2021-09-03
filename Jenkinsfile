@@ -1,4 +1,4 @@
-@Library("jenkinsdemo") _
+@Library("jenkinsdemo@dev") _
 node {
 	stage("build") {
 		swissknife.printName 'Hello Mr. Deepesh' 
