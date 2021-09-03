@@ -1,12 +1,8 @@
-@Library("jenkinsdemo@dev") _
-node {
-	stage("build") {
-		swissknife.printName 'Hello Mr. Deepesh' 
-	}
+Library("jenkinsdemo") _
+import com.acceleratedskillup.* 
 
-	stage ("deepesh") {
-		deepesh.helloWorld "Shean Leigon"
+node {
+	stage("demo") {
+		println Calculator().add(1,2)
 	}
 }
-
-
