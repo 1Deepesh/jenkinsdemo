@@ -25,7 +25,8 @@ def call (String command = "build") {
             agent any
             stages {
                 stage('sleep') {
-                    sh 'sleep 30'
+		steps {
+                    sh 'sleep 30' }
                 }
             }
         }
