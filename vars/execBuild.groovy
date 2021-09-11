@@ -20,9 +20,20 @@ def call (String command = "build") {
                 println "==================="
             }
         }
-    } else {
+    } else if (command == "sleep") {
+        pipeline {
+            agent any
+            stages {
+                stage('sleep') {
+                    sh 'sleep 30'
+                }
+            }
+        }
+    }
+    else {
         node {
             println "DO NOTHING ........."
         }
     }
 }
+
