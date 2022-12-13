@@ -1,3 +1,3 @@
-def sayMyName(String name='Guest') {
+def call(String name='Guest') {
 	println "Hello Mr. $name"
 }
