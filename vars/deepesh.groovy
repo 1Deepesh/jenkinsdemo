@@ -1,3 +1,3 @@
-def call (def name) {
-	println "hello mr. $name, hope you are enjoying learning the pipeline."
+def call (def name = "Deepesh Prasad") {
+	println "Hello Mr. $name, hope you are enjoying learning the pipeline."
 }
