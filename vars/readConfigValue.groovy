@@ -1,5 +1,5 @@
 def call () {
-    def pathToFile = libraryResource 'com/acceleratedskillup/feature-dev.yml'
+    def pathToFile = libraryResource 'com/acceleratedskillup/application.yml'
     println (pathToFile)
     
     // read the yaml file
@@ -13,6 +13,13 @@ def call () {
       }
     
     println (age)
-
-
+//     if a environment specific file exists, then override the config vars 
+    
+    def envFile = libraryResource 'com/acceleratedskillup/feature-dev.yml'
+    v_data = readYaml (text: envFile) 
+    v_configData = v_data.environment 
+    
+    for (i in configData) {
+        env."$i.key" = "$i.value"
+    }
 }
