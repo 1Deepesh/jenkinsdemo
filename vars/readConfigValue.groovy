@@ -9,7 +9,8 @@ def call () {
     
       for (item in config_data) {
             // println ("key is $item.key and value is $item.value")
-            env."$item.key" = "$item.value"
+            env."$item.key" = "$item.value" 
+      }
     
     println (age)
 
