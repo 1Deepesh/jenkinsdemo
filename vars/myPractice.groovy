@@ -2,7 +2,7 @@ def call (def String command = "build") {
     if (command == "" || command == null) {
         println ("please select an input")
     } 
-    else (if command == "build") {
+    else if (command == "build") {
         pipeline {
             agent any 
             stages {
