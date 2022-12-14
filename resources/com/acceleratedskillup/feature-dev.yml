@@ -1,4 +1,5 @@
-name: 'deepesh prasad'
-married: false
-age: 28
-color: 'fair'
+environment:
+ name: 'deepesh prasad'
+ married: true
+ age: 28
+ color: 'fair'
