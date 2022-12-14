@@ -15,5 +15,5 @@ def printName(name){
 
 
 def sayMyAge(def age) {
-	println ("Hello Mr. $name, You are $age years old.") 
+	println ("Hello Mr. , You are $age years old.") 
 }
