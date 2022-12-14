@@ -1,4 +1,4 @@
-def call (def String command = "build") {
+def call (def command) {
     if (command == "" || command == null) {
         println ("please select an input")
     } 
@@ -20,7 +20,7 @@ def call (def String command = "build") {
         }        
     }
     else {
-        println ("please select a valid line")
+        println ("please select a valid option i.e. build / deploy")
     }
     
 }
