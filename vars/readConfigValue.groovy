@@ -1,6 +1,6 @@
 def call (pathToFile) {
     if (pathToFile == "" || pathToFile == null ) {
-        pathToFile = load "jenkinsdemo/resources/com/acceleratedskillup/feature-dev.yml"
+        def pathToFile = libraryResource 'com/acceleratedskillup/feature-dev.yml'
     }
     // read the yaml file
     raw_data = readYaml (file: 'pathToFile')
