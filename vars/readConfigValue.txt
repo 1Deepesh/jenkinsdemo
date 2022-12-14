@@ -1,0 +1,2 @@
+This function will collect the variables from the resources.
+to load a file from your resource directory, use : libraryResource
