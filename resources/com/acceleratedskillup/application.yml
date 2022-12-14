@@ -1,0 +1,7 @@
+environment: 
+ name: "generic name"
+ age: 0 
+ married: false 
+ color: 'black'
+ address: 'DELHI'
+ pincode: '1100008'
