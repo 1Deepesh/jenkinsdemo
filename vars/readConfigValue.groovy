@@ -7,11 +7,11 @@ def call () {
     config_data = raw_data.environment 
     println (config_data.name)
     
-    for (i in config_data) { k,v ->
-        env."$i.k" = "$i.v"
-    }
+      for (item in config_data) {
+            // println ("key is $item.key and value is $item.value")
+            env."$item.key" = "$item.value"
     
-    println (name)
+    println (age)
 
 
 }
