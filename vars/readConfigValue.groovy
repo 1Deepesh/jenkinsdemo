@@ -3,7 +3,7 @@ def call () {
     println (pathToFile)
     
     // read the yaml file
-    raw_data = readYaml (file: pathToFile)
+    raw_data = readYaml (text: pathToFile)
     config_data = raw_data.environment 
     println (name)
 
