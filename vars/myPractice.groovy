@@ -7,7 +7,9 @@ def call (def String command = "build") {
             agent any 
             stages {
                 stage ('a') {
+                    steps {
                     println "====================================\n\t\texecute build\t\t\n================================="
+                    }
                 }
             }
             post {
