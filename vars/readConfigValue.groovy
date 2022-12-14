@@ -12,7 +12,7 @@ def call () {
             env."$item.key" = "$item.value" 
       }
     
-    println (age)
+    println ("before loading the env specific file,,,,,, age is $age and name is $name")
 //     if a environment specific file exists, then override the config vars 
     
     def envFile = libraryResource 'com/acceleratedskillup/feature-dev.yml'
@@ -22,4 +22,9 @@ def call () {
     for (i in configData) {
         env."$i.key" = "$i.value"
     }
+    
+        println ("AFTER loading the env specific file,,,,,, age is $age and name is $name")
+    println (address) 
+    println (pincode)
+
 }
