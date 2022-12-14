@@ -19,7 +19,7 @@ def call () {
     v_data = readYaml (text: envFile) 
     v_configData = v_data.environment 
     
-    for (i in configData) {
+    for (i in v_configData) {
         env."$i.key" = "$i.value"
     }
     
